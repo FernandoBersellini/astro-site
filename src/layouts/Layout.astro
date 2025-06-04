@@ -1,3 +1,11 @@
+---
+import Headers from "../components/Headers.astro"
+import Main from "../components/Main.astro"
+import "../styles/global.css"
+
+const {title = "default"} = Astro.props
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +13,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
+
 	<body>
-		<slot />
+		<Headers></Headers>
+		<Main>		</Main>
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+
