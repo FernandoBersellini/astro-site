@@ -1,11 +1,27 @@
 ---
+    import "../styles/global.css"
+    import Link from "../components/Link.astro"
 ---
 <header>
-    <h1>Olá, seja bem vindo ao meu site!</h1>
+    <h1>Fernando Bersellini Teixeira</h1>
+    <nav>
+        <Link target="#about">Sobre mim</Link>
+        <Link target="#technology">Tecnologias</Link>
+        <Link target="#projects">Projetos</Link>
+        <Link>Contato</Link>
+    </nav>
 </header>
 
 <style>
-    h1 {
-        text-align: center;
+    header {
+        background-color: #8c44d1;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+        align-self: center;
     }
 </style>

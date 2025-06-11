@@ -1,0 +1,39 @@
+---
+import Link from "./Link.astro";
+import ProjectInfo from "./ProjectInfo.astro";
+
+
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="projects-wrapper">
+            <h1 id="projects">
+                Projetos pessoais
+            </h1>
+            <ProjectInfo>
+                <h1>DietInfo</h1>
+                <p>Uma API Rest com funcionalidades CRUD para usuários de um sistema de um App de sáude.</p>
+                <Link target="https://github.com/FernandoBersellini/DietInfo">Repositório</Link>
+            </ProjectInfo>
+        </div>
+    </body>
+</html>
+
+<style>
+    #projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+</style>

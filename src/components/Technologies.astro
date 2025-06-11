@@ -1,0 +1,79 @@
+---
+import Card from "./Card.astro";
+
+
+---
+
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />          
+<div id="technology-wrapper">
+    <h1 id="technology">Tecnologias</h1>
+    <div id="cards">
+        <Card>
+            <i class="devicon-java-plain-wordmark" style="font-size: 80px;"></i>
+            <h1>Java</h1>
+        </Card>
+        <Card>
+            <i class="devicon-astro-plain colored" style="font-size: 80px;"></i>
+            <h1>Astro</h1>
+        </Card>
+        <Card>
+            <i class="devicon-spring-original" style="font-size: 80px;"></i>
+            <h1>Spring</h1>
+        </Card>
+        <Card>
+            <i class="devicon-php-plain" style="font-size: 80px;"></i>
+            <h1>PHP</h1>
+        </Card>
+        <Card>
+            <i class="devicon-mysql-original" style="font-size: 80px;"></i>
+            <h1>MySql</h1>
+            
+        </Card>
+        <Card>
+            <i class="devicon-git-plain" style="font-size: 80px;"></i>
+            <h1>Git</h1>
+          
+        </Card>
+        <Card>
+            
+            <i class="devicon-postman-plain" style="font-size: 80px;"></i>
+            <h1>Postman</h1>
+          
+        </Card>
+        <Card>
+            <i class="devicon-javascript-plain" style="font-size: 80px;"></i>
+            <h1>Javascript</h1>
+        </Card>
+        <Card>
+            <i class="devicon-html5-plain" style="font-size: 80px;"></i>
+            <h1>HTML</h1>
+        </Card>
+        <Card>
+            <i class="devicon-css3-plain" style="font-size: 50px;"></i>
+            <h1>CSS3</h1>
+        </Card>
+        <Card>
+
+            <i class="devicon-bootstrap-plain" style="font-size: 50px;"></i>
+            <h1>Bootstrap</h1>
+          
+        </Card>
+    </div>
+</div>
+
+<style>
+    #technology-wrapper {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cards {
+        width: 65%;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+</style>

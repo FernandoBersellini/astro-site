@@ -1,0 +1,18 @@
+---
+    const {target = "/"} = Astro.props
+
+---
+
+<a href = {target}>
+    <slot></slot>
+</a>
+
+<style>
+    a {
+        background-color: #a450f4;
+        padding: 15px;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+</style>
